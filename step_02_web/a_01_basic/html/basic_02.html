@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+html:4t - 느슨한 html4
+html:4s - 엄격한 html4
+html:xt - 느슨한 xhtml
+hrml:xs - 엄격한 xhtml-->
+
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="xido, web, html5, basic">
+<!--  "keywords" 메타 태그는 검색창에서 키워드로 검색시 페이지가 나오도록함 -->
+  <meta name="description" content= "xido에게 배우는 웹언어 html 기본지식 이해하기">
+<!--  "description" 메타 태그는 검색창에서 단락으로 검색시 페이지가 나오도록함 -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="android-touch-icon" href="favicon.png">
+
+<!--ie setting -->
+  <!--[if lte IE 9]>
+      <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />     
+         <![end if]-->
+           
+            
+  <title>Document</title>
+  <style>
+    h1{color:#acf}
+    </style>
+</head>
+<body>
+  <h1>간단하게 내용 파악하기</h1>
+  
+<!--  script============= -->
+<!--jquery(=제어)불러오기-->
+
+ <script src="http://unpkg.com/jquery"></script>
+
+  <script> 
+  // jquery
+  /*  --- jqurey 기본세팅공식
+  (function($){  })(this.jQuery);   --- */
+
+  (function($){
+    var myh1 = $('h1')
+  myh1.css({backgroundColor:'#aa7',color:'#fff'});
+  
+    myh1.on('click', function(){myh1.slideUp(); 
+  });
+  
+})(this.jQuery);
+   
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- emmet.io -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- meta:compat tap = 비표준브라우저(익스플로러) 가장 최신 버전으로 설정 -->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- meta:vp tap = 반응형 웹브라우저 설정 기기의 가로사이즈로 설정, 확대X   -->
+    
+<!-- favicon -->
+<!-- link:favicon-->
+<!--link:touch  -->
+ <link rel="apple-touch-icon" href="../favicon.png" />
+ <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+
+
+<!-- ie setting -->
+<!-- 조건부 주석, 상황에 따라 익스플로러에만 세팅해야 할 경우 -->
+<!--[if lte IE]>
+ <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+  
+<![endif]-->
+ 
+  <title>basic_01 웹문서 첫번째 제작하기</title>
+<!--  타이틀을 기점으로 직접쓰는 영역은 위, 불러오는 영역은 아래 기입-->
+  
+   <style> 
+    body {margin:0;}
+    div#wrapBox {width:960px; height:3500px; background-color:#035; margin:0 auto;} 
+  /* div하고 띄어쓸 경우는 자손을 선택한 경우이기 때문에 띄우면 안된다.*/
+  /* id란 글자 대신에 #을 쓰면 된다. */
+     .du_dung {width:50%; height:3500px; background-color:#430; margin: auto;}
+  </style>
+</head>
+<body>
+ <div id="wrapBox">
+<!-- id를 쓸 때 두단어 이상일 경우 카멜케이스로 두번째 단어 첫글자는 대문자로 쓴다.-->
+  <div class="du_dung">두둥!!</div>
+   
+ </div>
+ 
+ <script>
+  getElementById('wrapBox');
+   getElementsByclassName('du_dung');
+/* class는 여러번 쓰기 때문에 getElements 복수형으로 쓴다. */   
+  </script>
+</body>
+</html>

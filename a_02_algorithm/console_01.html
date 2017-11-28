@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>boder</title>
+<style>
+  
+  </style>
+</head>
+<body>
+  
+<!--  script  -->
+<script>
+  
+/*10~1까지 출력하시오 */  
+function first(){
+ var num = 10;
+ for(; num>0; num--){
+   console.log('숫자' + num);
+ }
+}
+//first();
+  
+  
+  
+  /* 1~100까지의 합을 출력하시오 */
+  function second(){
+    var sum = 0, n = 0, before;
+    for(; n <= 100; n ++){ before = sum; 
+    console.log ((sum += n) + "=" + before + "+" + n); 
+    }
+    
+  console.log ("1~100까지의 합?" + sum);
+  }
+  //second();
+  
+  /* 1~100까지의 짝수의 합을 출력하시오 */
+  function third (){
+    var sum = 0, n = 0, before;
+    for (; n<=100; n += 2) {before = sum; 
+      if(n % 2 == 0){
+        console.log ((sum += n) + "=" + before + "+" + n);
+      }
+      console.log ("1~100까지 짝수의 합?" + sum);
+    }
+  }
+  
+  third();
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- layout_01-2.html  -->
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="../css/css_layout_01-2.css">
+
+  <!-- cc:ie6 + (tap) 
+  *IE 9버전 이하일 때 문제없이 잘 구동할 수 있도록 
+   조건부 주석 *
+===============================
+<!--[if lte IE 9]>
+   <script src="http://unpkg.com/html5shiv"> 
+   </script>
+<![endif]-------------------->
+
+  <title>layout_01-2</title>
+</head>
+
+<body>
+  <div id="box">
+    <header id="headBox">
+      <h1>logo</h1>
+      <nav id="globalNavArea">
+        <h2 class="hidden">global navigation area</h2>
+        <ul>
+          <li>01</li>
+          <li>02</li>
+          <li>03</li>
+          <li>04</li>
+          <li>05</li>
+          <li class="last">06</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- // #headBox -->
+
+
+    <section id="contentBox" class="clearfix">
+      <h2 class="hidden">웹페이지 본문내용</h2>
+      <article id="contentArea">
+        <h3 class="hidden">contentArea</h3>
+      </article>
+      <article id="viewArea">
+        <h3 class="hidden">viewArea</h3>
+      </article>
+      <aside id="sideArea">
+        <h3 class="hidden">sideArea</h3>
+      </aside>
+    </section>
+    <!-- //#contentBox    -->
+    <footer id="footBox">
+      <h2 class="hidden">footer</h2>
+    </footer>
+    <!-- // #footBox -->
+  </div>
+
+
+
+  <!--  script  -->
+  <script>
+  </script>
+</body>
+
+</html>

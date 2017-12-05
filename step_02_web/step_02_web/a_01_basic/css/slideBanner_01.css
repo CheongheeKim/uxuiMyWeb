@@ -1,0 +1,99 @@
+/* slideBanner_01.css */
+
+#wrap {width: 100%; height: auto; padding: 3rem; box-sizing: border-box;}
+h1{padding: 1rem; background-color: #a87; color: #fff;
+margin-bottom: 0.7rem;}
+h2{ border-top: 2px solid #777; background-color: #aaa;
+color: #fff; text-align: center; padding: 1rem;}
+/* 사이즈를 따로 주지 않았을 땐 가로값 자동으로 100%로 설정된다.
+ 여기다가 패딩을 밖으로 1rem을 주어서 사이즈가 만들어진 것 처럼 보임. */
+
+h2 + div { width:900px; height: auto; margin:0 auto; padding: 0.7rem; background-color: #fcc; margin-bottom: 2rem; }
+
+.box_01>ul{width: 100%; height: auto;}
+.box_01>ul>li{width:100px; height: 150px; float: left; margin-right: 10px; background-color: #0af; color: #fff;}
+.box_01>ul>li>a{color: inherit; display: block; width: 100%; height: 100%;}
+
+.box_01>ul>li:nth-child(2n-1){background-color: #fa0;}
+/* ntn-child(2n-1) : ntn-child 2번째마다의 그 바로 전의 것 선택 */
+.box_01>ul>li:nth-child(1){display: block;}
+.box_01>ul>li:nth-child(2){display: none;} 
+/* display:none 은 사라지게 함. 읽어주지 않음. 쓸 수 없는 코드 */
+/* .box_01>ul>li:nth-child(3){} */
+.box_01>ul>li:nth-child(4){visibility: hidden;} 
+/* 흔적만 남기고 투명하게(없는셈)*/
+.box_01>ul>li:nth-child(5){visibility: visible;}
+/*  */
+.box_01>ul>li:nth-child(6){display: inline;}
+.box_01>ul>li:nth-child(7){display: inline-block;}
+/* .box_01>ul>li:nth-child(8){} */
+/* nth-child : n번째에 있는 자식을 선택할 떄 쓰는 요소 */
+
+
+/* overflow 처리하기 ---------------------------------------------*/
+.box_02>ul{width: 50%; height: auto; border: 2px solid #d07; }
+.box_02>ul>li{width: 100%; height: 100px; background-color: #ccc; margin-bottom: 3rem; overflow: hidden; }
+/* .box_02>ul>li:nth-child(1){overflow: visible} */
+.box_02>ul>li:nth-child(1){overflow: visible;} 
+/* 넘치는 것 모두 보이기 */
+.box_02>ul>li:nth-child(2){overflow-x:scroll; overflow-y: hidden;} 
+.box_02>ul>li:nth-child(3){overflow-y:scroll; overflow-x: hidden;} 
+.box_02>ul>li:nth-child(4){overflow-x:hidden; overflow-y: hidden;} 
+.box_02>ul>li:nth-child(5){overflow-x:auto; overflow-y: auto;} 
+/*  글씨 양에 따라 자동으로 스크롤이 생기기도 함 */
+/*  이렇듯, 실제 사용할 때에는 대체로 세로 auto가 많고, 이외에는 hidden 처리가 많다. */
+.box_02>ul>li:nth-child(6){background-color: #0cc; padding: 0.5rem; box-sizing: border-box;}
+.box_02>ul>li:nth-child(6)>span{
+  display:block; width: 100%; height: 100%; background-color: inherit; overflow-y: scroll; overflow-x: hidden; padding-right: 5rem;}
+  /* 페이크 기능 
+  ** <스크롤 감출 때 ** 
+   자식에 패딩-롸이트를 좀 더 줘서 부모의 값에 오버플로우를 히든처리하면 스크롤이 아예 안보이게 숨겨진다.
+  */
+.box_02>ul>li:nth-child(7){ white-space: nowrap; word-wrap: break-word;} 
+
+/* white-space: 요소 내부의 공백 처리
+   : normal; 기본, 공백을 1개로 처리
+   : nowrap; 공백을 여러개 넣어도 하나로(줄바꿈 안됨 글을 한줄로 만든다) V
+   : pre ; 공백을 있는 그대로 처리
+   : pre-wrap; 공백을 코드에 있는 그대로 (줄바꿈이 없어도 자동으로 줄바꿈처리)
+   : pre-line; 공백을 여러개 넣어도 하나로 처리, 줄바꿈 자동처리, br코드도 처리
+
+     word-wrap: 긴 텍스트를 강제로 줄바꿈 처리
+     : normal ; 기본값 글자가 길어도 한줄로.
+     : break-word; 강제로 끊어서 줄바꿈 V
+
+     text-overflow : 글자가 지정한 너비를 넘어갈 경우 처리 방법
+      : clip; 기본
+      : ellopsis; 말줄임표처리 V 
+      (부모 태그의 넓이가 auto일 경우 처리 안됨, overflow:hidden;같이 사용)
+   */  
+
+.box_02>ul>li:nth-child(8){white-space: nowrap; text-overflow: ellipsis;}
+/* text-overflow: ellipsis 말줄임 ... 생김.  */
+
+/* slide_banner 기초 작업하기 1 */
+.box_03{ height: 500px; border: 2px solid #5aa; margin-top: 1rem; position: relative;}
+
+.btn{
+  width: 140%; height: 0;
+  /* height: 20px;높이를 없애서 가운데 막을 없애야 한다, 안그러면 중간에 막이 있어서 클릭할 수 없다. */ 
+   position: absolute; top: 50%; left: -20%; 
+   background-color: #afc;}
+   /* 처음에 포지션 위치를 가로 세로 50%씩 주고,
+      이후 위치를 잡는다. 부모값이 140%이므로 140%/2=70%-50%=20%, 왼쪽으로 이동이니까 마이너스... 공식으로 외우자.. */
+.btn>button{width: 100px; height: 140px;  background-color: #0af;}
+.btn>button:first-child{float:left;}
+.btn>button:last-child{float:right;}
+/* nth-child가 두개일 경우는 숫자로 안씀 */
+
+.banner{width: 100%; height: 100%; background-color: #fff;}
+.banner>ul{width:500%; height: 100%; background-color: #aaa; }
+.banner>ul>li{width: 20%;  height: 100%; float: left;
+text-align: center; line-height: 500px; font-size: 3rem;}
+/* line-height: 줄간격(높이), 부모 박스 높이 그대로 줘야 가운데로 감. */
+/* 광고 배너의 경우는 nth-child를 사용해서는 안된다! */
+.banner>ul>li.banner_content_01{background-color: #0af;}
+.banner>ul>li.banner_content_02{background-color: #5aa;}
+.banner>ul>li.banner_content_03{background-color: #a87;}
+.banner>ul>li.banner_content_04{background-color: #c3c;}
+.banner>ul>li.banner_content_05{background-color: #fcc;}

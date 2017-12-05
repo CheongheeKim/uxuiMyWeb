@@ -1,0 +1,298 @@
+/* layout_test_03.css */
+
+@charset"uft-8";
+
+/* ====== reset css ===== */
+html,body{
+  margin: 0;padding: 0;color: #333;
+}
+h1,h2,h3,h4,h5,h6,p,pre,div{
+  margin: 0; padding: 0;
+}
+ul,ol,li,dl,dt,dd{
+  margin: 0;padding: 0; list-style: none;
+}
+a{
+  text-decoration: none; color: #f0a;
+}
+a:hover{
+  text-decoration: underline;
+  font-weight:  bold;
+}
+img {
+  border: 0;
+}
+header,section,content,footer,aside,article,nav,main,figure {
+  display:block;
+}
+
+/*  ===== common ===== */
+.clearfix:after {
+  content: " "; 
+  display: block;
+  clear: both;
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.hidden {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/*  ===== design ===== */
+#wrap{
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
+/* //#wrap ----- */
+
+#headBox{
+  width: 100%;
+  height: 200px; 
+  background-color: #3366ff; 
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+h1{
+  width: 200px;
+  height: 100px;
+  background-color: #fff;
+  float:left;
+}
+#unb{
+  width: 200px;
+  height: 50px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  float:right;
+}
+#gnb{
+  width: 550px;
+  height: 50px;
+  background-color: ;
+  float:right;
+}
+#gnb>ul {
+  width: 100%;
+  height: 100%;
+  }
+#gnb>ul>li {
+  width: 100px;
+  height: 50px;
+  float:left;
+  background-color: #fff;
+  margin-right: 12px;
+}
+#gnb>ul>li.last {
+  margin-right: 0;
+}
+/* //#headBox ----- */
+
+#bannerBox{
+  width: 100%;
+  height: 300px;
+  background-color: #0099aa;
+}
+/* //#bannerBox ----- */
+
+#contentBox{
+  width: 100%;
+  height: auto;
+}
+
+#newsBox{
+  width: 100%;
+  height: auto;
+  background-color: #Fa58ac;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/*
+  #newsHeader{
+    width: 180px;
+    height: 50px;
+    background-color: #f5a9a9;
+    margin-top:20px;
+} 
+*/
+.sub_title{
+    width: 180px;
+    height: 50px;
+    background-color: #f5a980;
+    margin-top:20px;
+}  
+
+#newsBox>ul{
+  width: 100%;
+  height: auto;
+  }
+
+  #newsBox>ul>li{
+    width: 210px;
+    height: 210px;
+    background-color:#fff;
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  #newsBox>ul>li.news_04{
+    margin-right: 0;
+  }
+
+  #news>ul>li>a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+}
+/* //#newsBox --*/  
+
+
+#infoBox{
+  width: 100%;
+  height: auto;
+  background-color: #fa0;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/*
+  #infoHeader{
+   width: 180px;
+    height: 50px;
+    background-color: #f5a9a9;
+  }  
+*/
+  #infoBox>ul{
+    width: 100%;
+    height: auto;
+  }
+  #infoBox>ul>li{
+    width: 210px;
+    height: 210px;
+    background-color:#fff;
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  #infoBox>ul>li.last{
+    margin-right: 0;
+  }
+
+
+#entertainment{
+  width: 100%;
+  height: auto;
+  background-color: #81f7be;
+  padding: 30px;
+  box-sizing: border-box;
+}
+/*
+#enterHeader{
+  width: 200px;
+   height: 50px;
+   background-color: #f5a9a9;
+   margin-top:20px;
+   margin-bottom: 10px;
+}
+*/
+#entertainment>ul{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+  #entertainment >ul>li{
+    width: 440px;
+    height: 200px;
+    background-color:#fff;
+    margin-bottom: 10px;
+   }
+#entertainment >ul>li.last{
+  margin-bottom: 0;
+}
+#entertainment >div{
+    width:50%;
+    height:auto;
+    float: right;
+ }
+#entertainment .one{
+  width: 100%; height: 300px; background-color:#fff; margin-bottom: 10px;
+}
+#entertainment >div > ul{
+  width: 100%; height: auto;
+}
+#entertainment >div > ul>li{
+    width: 100px;
+    height: 100px;
+    background-color:#fff;
+    padding: 10px;
+    box-sizing: border-box;
+    float:left;
+    margin-right: 16px;  
+}
+#entertainment li.last{margin-right: 0;}
+/* //#contentBox ----- */
+
+#footBox{
+  width: 100%;
+  height: auto;
+  background-color: #e3f6ce;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  }
+#footBox h2{
+  width: 150px;
+  height: 100px;
+  background-color: #fff;  
+  float: left;
+  }
+
+#footBox .foot_info{
+  width: 300px;
+  height: auto;
+  float: left;
+  margin-left: 20px;
+ }
+
+
+#footBox .info{
+  width: 300px;
+  height: 40px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  }
+
+.address{
+  width: 300px;
+  height: 120px;
+  background-color: #fff;
+ }
+.family{
+  width: 100px;
+  height: 30px;
+  background-color: #fff;
+  float: right;
+}
+
+/* //#footBox ----- */
+
+
+
+
+
+
+
+
+
+
+

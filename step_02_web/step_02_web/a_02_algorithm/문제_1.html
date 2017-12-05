@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>homework_01</title>
+  
+<!--  script  -->
+
+<script>
+  //함수 선언식
+  //함수 첫글자는 일부러 대문자로 써서 구분하기 쉽게 함.
+  //ex) id는 카멜케이스로 작성하고 class를 언더바를 쓰는 것처럼 
+ /* function First(){
+  var fish=24, day=3, cat=0;
+  for(; day >= 3; day++){
+    if(day % 10 == 0){
+      cat++; 
+      fish--;
+      //검증
+      console.log('고양이가 먹은 고등어:'+ cat, '남은 고등어:' + fish, '고등어 먹은날:' +day);
+    }
+    if(fish == 0){ 
+    console.log('총 소요된 날짜' +day);
+      break;
+    }
+  }//최초날짜가 3일부터였으니 해당 날짜로부터
+ 
+  day -= 2; 
+    
+  console.log('해당일부터:'+ day +'소요');
+  }  
+ // First(); //함수 호출식*/
+  
+ function FirstTest(i,j,k)//인수 
+  {
+  var fish = i, day = j, cat = 0; before= j-1;//인자
+  for(; day >= 3; day++){
+    if(day % k == 0){
+      cat++; 
+      fish--;
+      //검증
+      console.log('고양이가 먹은 고등어:'+ cat, '남은 고등어:' + fish, '고등어 먹은날:' +day);
+    }
+    if(fish == 0){ 
+    console.log('총 소요된 날짜' +day);
+      break;
+    }
+  }//최초날짜가 3일부터였으니 해당 날짜로부터
+ 
+  day -= 2; 
+    
+  console.log('해당일부터:'+ day +'소요');
+  }  
+  FirstTest(24,3,10); //함수 호출식에 인수를 대입
+  </script>
+</head>
+<body>
+</body>
+</html>

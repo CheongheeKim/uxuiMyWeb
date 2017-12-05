@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>boder</title>
+<style>
+  
+  </style>
+</head>
+<body>
+  
+<!--  script  -->
+<script>
+  
+/*10~1까지 출력하시오 */  
+function first(){
+ var num = 10;
+ for(; num>0; num--){
+   console.log('숫자' + num);
+ }
+}
+//first();
+  
+  
+  
+  /* 1~100까지의 합을 출력하시오 */
+  function second(){
+    var sum = 0, n = 0, before;
+    for(; n <= 100; n ++){ before = sum; 
+    console.log ( before + "+" + n  + "=" +(sum += n)); 
+    }
+    
+  console.log ("1~100까지의 합?" + sum);
+  }
+ // second();
+  
+  /* 1~100까지의 짝수의 합을 출력하시오 */
+  function third (){
+    var sum = 0, n = 0, before;
+    for (; n<=100; n += 2) {before = sum; 
+      if(n % 2 == 0){
+        console.log ((sum += n) + "=" + before + "+" + n);
+      }
+      console.log ("1~100까지 짝수의 합?" + sum);
+    }
+  }
+  
+  //third();
+  
+
+  //1부터 100까지의 합에서 홀수는 더하고 짝수는 뺴라
+
+  function fourth() {
+  var num = 0, sum = 0, before, result;
+  for(; num <= 100; num++){
+      before = sum;
+      if(num % 2 == 0){ 
+       result =  sum -= num;
+        console.log('이전값: ' + before + '계산값: ' + sum + '+='+ num + '=' + result);
+      } else {
+        result = sum += num;
+        console.log('이전값:'+ before + '계산값: ' + sum + '+='+ num + '=' + result);
+       }
+      }
+      console.log ("최종값" + sum );
+       }
+ // fourth();
+  
+  
+  
+//(12/01) a와 b에 숫자를 대입하여 두 수의 약수를 구하여라.
+  var num = function(a,b){
+    var i=a, j=b, k=0;
+    for(;k <= j; k++){
+      if(i % k == 0 && j%k == 0){
+    console.log( k );
+    }//if
+    }//for
+  }//num();
+  //num(10,30);
+  //해당하는 함수가 가변성을 띄는 경우에는 변수를 함수 밖에 빼서 지정...
+
+  var myNumber = function(a,b){
+    var i=a, j=b, k=0, l;
+    var arr = []; //[ 배열 , 리스트 ];
+    // l의 변수를 통해서 큰 숫자를 판단!
+    if(i > j){
+      l = i;
+    }else{
+      l = j;
+    }
+   // console.log('입력 숫자 중 큰 숫자는 : ' + l);
+  for(;k <= l; k++){
+    if(i%k==0 && j%k==0){
+      arr.push(k); //.push : 배열에다가 (k)숫자를 끼워 넣으라는 의미
+    }//if
+  }//for
+  console.log(arr);
+  }//myNumber();
+  myNumber(100,100);
+  
+  var arr = [1,5,10,'afd']; 
+  //arr 은 배열, 몇개가 있는지 확인 
+  
+  
+  
+  
+  
+  
+  </script>
+</body>
+</html>
+
+

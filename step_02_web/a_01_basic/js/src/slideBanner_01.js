@@ -15,7 +15,7 @@ var leftBtn = $('.btn').children('button').first();
 var rightBtn = $('.btn').children('button').last();
 
 leftBtn.on('click',function(event){
-event.preventDefault(); // ??
+event.preventDefault(); // ?? 캐시를 저장해서 보내지 못하게 방어함
 
 bannerUl.stop(false,true).animate({marinLeft:0}, function(){
   bannerLast = bannerUl.children('li').last();

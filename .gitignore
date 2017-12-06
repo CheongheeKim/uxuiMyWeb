@@ -11,3 +11,7 @@ graphic/**/*.*
 !graphic/guide.md
 a_01_basic/css/css_basic_07.css
 *.css
+
+
+#DS_Store
+**/.DS_Store

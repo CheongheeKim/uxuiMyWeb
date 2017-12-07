@@ -9,10 +9,9 @@
 #그래픽파일 중 마크다운파일은 제외한다.
 graphic/**/*.*
 !graphic/guide.md
-a_01_basic/css/css_basic_07.css
-*.css
+
 
 
 #DS_Store
 **/.DS_Store
-*.png
+

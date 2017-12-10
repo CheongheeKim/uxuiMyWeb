@@ -13,53 +13,54 @@
     
     <title>index</title>
   </head>
+
   <body>
     <div id="wrap">
       
       <section id="mainPage">
         <header id="headBox" class= "clearfix">
-          <h1><a href="#">LotteWorld Icerink</a></h1>
+          <h1><a href="#mainPage">LotteWorld Icerink</a></h1>
           <nav id="gnbArea">
             <h2 class="hidden">글로벌 네비게이션 바</h2>
             <ul>
-              <li><a href="#">소개</a></li>
-              <li><a href="#">이용안내</a></li>
-              <li><a href="#">이벤트</a></li>
-              <li class="last"><a href="#"> 위치</a></li>
+              <li><a href="#introPage">소개</a></li>
+              <li><a href="#infoPage">이용안내</a></li>
+              <li><a href="#eventPage">이벤트</a></li>
+              <li class="last"><a href="#locationPage"> 위치</a></li>
             </ul>
             </nav><!-- //#gnbArea -->
             <nav id="indicatorArea">
               <h2 class="hidden">인디케이터</h2>
               <ul>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li class="last"><a href="#">5</a></li>
+                <li><a href="#mainPage">1</a></li>
+                <li><a href="#introPage">2</a></li>
+                <li><a href="#infoPage">3</a></li>
+                <li><a href="#eventPage">4</a></li>
+                <li class="last"><a href="#locationPage">5</a></li>
               </ul>
             </nav>
             <!-- //#indicatorArea -->
           </header>
           <!-- //#headBox  -->
-          <div id="imageBox"  >
-            <article id="imageTextArea" >
+          <div id="imageBox" class="clearfix" >
+            <article id="imageTextArea">
               <div>
                 <h2>롯데월드 아이스링크장</h2> <br />
                 <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni veritatis cumque minus doloribus accusantium, ipsum repudiandae, ipsam alias quis voluptatibus doloremque? Pariatur ad quasi minus voluptate fugit cupiditate incidunt reprehenderit. </p>
               </div>
               </article> <!-- //#imageTextArea -->
               
-              <content id="contentBox" >
+              <article id="contentBox">
               <div>
                 <h2 class="hidden">안내 컨텐츠</h2>
                 <ul>
-                  <li><a href="#">요금 및 이용안내</a></li>
-                  <li><a href="#">이벤트 프로모션</a></li>
-                  <li><a href="#">위치 안내</a></li>
+                  <li><a href="#infoPage">요금 및 이용안내</a></li>
+                  <li><a href="#eventPage">이벤트 프로모션</a></li>
+                  <li><a href="#locationPage">위치 안내</a></li>
                 </ul>
               </div>
               <div class="phone_number">대표번호 1661-2000 </div>
-              </content><!-- //#contentBox  -->
+              </article><!-- //#contentBox  -->
               </div> <!-- //#imageBox -->
         </section>
         <!-- //#mainPage -->
@@ -86,22 +87,116 @@
         <!-- //#intoPage  -->
         
 
+        <section id="infoPage" >
+          <h2 class="hidden">이용안내 페이지</h2>          
+          <div id="infoTextArea" >  
+            <div>
+            <h3>이용안내</h3><br />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, qui. ipsum dolor sit amet, consectetur adipisicing elit. Ex laborum asperiores pariatur placeat rem atque inventore id cupiditate doloremque, rerum.</p>
+            </div>
+          </div> <!-- //#infoTextArea  -->
+          <div id="infoBox" >          
+            <ul class="info_content">
+              <li>
+                <a href="#">
+                <h3>01</h3>
+                <p class="icon">ICON</p>
+                <p class="info_text">요금안내</p>
+                </a>
+              </li>
+              <li>
+               <a href="#">
+                 <h3>02</h3>
+                 <p class="icon">ICON</p>
+                 <p class="info_text">이용시간안내</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h3>03</h3>
+                <p class="icon">ICON</p>
+                <p class="info_text">강습안내</p>
+              </a>
+            </ul>                
+          </div> <!-- //#infoBox -->
+        </section>
+        <!-- //#infoPage -->
+
+        <section id="eventPage" >
+          <h2>이벤트 프로모션</h2>        
+            <div class="event_banner">
+              <ul>
+               <li>수능생 할인 이벤트</li>
+               <li>키즈 매직 서커스</li>
+               <li>크리스마스 별별 스테이지</li>
+               <li>지난 이벤트</li>
+               <li>지난 이벤트</li>
+              </ul>
+            </div> <!--//.event_banner  -->
+            <div class="event_btn">
+              <button type="button">leftBtn</button>
+              <button type="button">rightBtn</button>
+            </div> <!-- //.Btn  -->     
+        </section>
+        <!-- #eventPage -->
 
 
+      <section id="locationPage">
+        <h2>찾아오시는 길</h2>
+        <div class="map_container">           
+            <ul class="map_text">
+              <li>
+              <h5>대중교통 이용시</h5><br />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, aliquid.
+                </p>
+              </li>
+              <li class="last">
+                <h5>자동차 이용시</h5><br />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, aliquid.
+                </p>
+              </li>            
+            </ul> <!-- .map_text -->          
+          <div class="google_map">google map
+          </div> <!-- //.google_map  -->    
+         </div> <!-- //.map_container -->    
+       </section>      
+       <!-- //#locationPage -->
+        
+      <footer id="footBox">
+        <div>
+          <h5>
+            <a href="#mainPage">LotteWorld Icerink</a>
+          </h5>
         </div>
-        <!-- //#wrap -->
+        <div class="foot_container">
+          <ul>
+            <li>
+              서울특별시 송파구 올림픽로 240 호텔롯데 롯데월드
+            </li>
+            <li>대표자 : 박동기</li>
+            <li>사업자등록번호 : 219-85-00014</li>
+            <li>통신판매업신고번호 : 송파 제5513호</li>
+            <li>대표전화 : 1661-2000</li>
+            <li class="last">Copyright 1996-2013 LOTTEWORLD. all rights reserved.</li>
+          </ul>
+        </div><!-- //.foot_container -->
+      </footer>
+      <!-- //#footBox -->
 
+
+
+    </div>
+        <!-- //#wrap -->
 
         <!-- jquery script -->
         <script src="js/base/jquery-ui.js"></script>
         <script src="js/base/jquery-3.2.1.js"></script>
-        <script src="js/src/index.js"></script>
-        
+        <script src="js/src/index.js"></script>        
         <script>
         (function($){
+
         })(this.jQuery);
-        </script>
-        
-        
-      </body>
-    </html>
+        </script>       
+
+  </body>
+</html>

@@ -3,6 +3,7 @@
 .clearfix::after{content:" "; display: block; width: 100%; height: 0; clear:both;}
 
 .hidden_wrap a>span, 
+.hidden_wrap button>span,
 .hidden{display:block; width:0; height: 0; position: absolute; z-index: -100; overflow: hidden;}
 .hidden_wrap a{display: block; width: 100%; height: 100%} 
 
@@ -14,4 +15,4 @@
 
 /* accessibility.css */
 
-a:focus, button:focus{outline: 2px solid #d07; background-color: #f04; color: #fff; }
+a:focus, button:focus{outline: 3px solid #9cf; color: rgba(225,225,225,0.2); }

@@ -1,4 +1,4 @@
-/* index.css */
+/* product_Tassimo.css */
 
 #wrap{width: 100%; height: auto; background-color: #fafafa;margin: 0 auto;  }
 #wrap .last{margin-right:0;}
@@ -15,20 +15,30 @@
   .gnb_btn{width: 50px; height: 100%; float: right; background-color: #fafafa; line-height: 40px; }
 /* ------------ #headBox ----------- */
 
-#bannerBox{width: 100%; height: auto; background-color: #fafafa; margin: 0 auto; }
-#bannerBox>ul{width:100%; height: 100%;  }
-#bannerBox>ul>li{width:100%; height: 400px;margin: 0 auto; background-color: #bbb; border-bottom: 1px solid #333; padding: 50px; box-sizing: border-box;} 
-#bannerBox>ul>li:nth-child(2){background-color: #ddd;}
-#bannerBox .main_banner{width: 330px; height: 100px;  margin: 0 auto; background-color: #fafafa; text-align: center; }
-/* ------------ #bannerBox ----------- */
 
-#contentBox{width: 100%; height: auto; background-color: #aaa;  margin: 0 auto; border-bottom: 1px solid #333;}
-#contentBox>ul{width: 100%; height: 640px;}
-#contentBox>ul>li{width: 50%; height: 50%; float: left; background-color: #aaa;}
-#contentBox>ul>li:nth-child(2){background-color: #eee;}
-#contentBox>ul>li:nth-child(3){background-color: #eee;}
-#contentBox .content_box{width: 330px; height: 100px;  margin:50px auto; background-color: #fafafa; text-align: center; }
-/* ------------ #contentBox ----------- */
+
+#brandWrap{width: 100%; height: auto; margin: 0 auto; background-color: #fafafa;}
+
+#bnbContainer{width: 100%; height: 120px; padding: 2rem; box-sizing: border-box; background-color: #777;}
+#bnb{width: 100%; height: 100%; margin: 0 auto; background-color: #555;}
+#bnb>ul{width: 75%; height: 100%; margin: 0 auto; padding: 0.5rem; box-sizing: border-box;}
+#bnb>ul>li{width: 120px; height: 100%; float: left; text-align: center; line-height: 40px; padding-right:0.5rem; border-right: 1px solid #fafafa;  margin-right: 1rem; color: #fafafa;} 
+#bnb>ul>li:nth-child(1){margin-right: 4rem; font-size: 1.2rem; border-right: none;} 
+#bnb>ul>li:nth-child(5){font-size: 1.5rem; font-weight: bold;} 
+/* ----------- #bnbContainer----------- */
+
+#tassimoWrap{width: 100%; height: auto;margin: 0 auto;  }
+
+.tassimo_banner{width: 100%; height: 450px ;margin: 0 auto; background-color: #ddd;border-bottom:1px solid #333;  padding: 1rem;  box-sizing: border-box;}
+.tassimo_banner>div{width: 100%; height: 100%; padding: 3rem;  box-sizing: border-box;}
+.tassimo_banner .tassimo_text{ float: right;width: 400px; height: auto; background-color: #bbb;}
+
+.tassimo_banner:nth-of-type(2n) .tassimo_text{float: left;}
+/* ----------- #tassimo_banner----------- */
+
+
+
+
 
 #footBox{width: 100%; height: 120px; background-color: #555;  margin: 0 auto; padding: 1rem; box-sizing: border-box;}
 #footBox>div{width: 100%; height:100%; }

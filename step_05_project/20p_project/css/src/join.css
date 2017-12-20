@@ -1,0 +1,65 @@
+/* index.css */
+
+#wrap{width: 100%; height: auto; background-color: #fafafa;margin: 0 auto;  }
+#wrap .last{margin-right:0;}
+/* ------------ #wrap ----------- */
+
+#headBox{width: 100%; height: 70px; background-color: #555; padding: 1rem; box-sizing: border-box; margin: 0 auto; }
+  #headBox>div{width: 100%;height: 100%;}
+  h1{width: 100px; height: 100%; background-color: #fff; text-align: center; float: left;}
+
+  #gnb{width: 700px; height: 100%; float: left; margin-left: 150px; }
+  #gnb>ul{width: 100%; height: 100%; background-color: #ddd;}
+  #gnb>ul>li{width: 100px; height: 100%; float: left;
+   margin-right: 50px; background-color: #fafafa; text-align: center; line-height: 40px;}
+  .gnb_btn{width: 50px; height: 100%; float: right; background-color: #fafafa; line-height: 40px; }
+/* ------------ #headBox ----------- */
+
+#mainWrap { width: 100%; height: auto; }
+#joinWrap{width: 100%; height: auto; background-color: #eee; }
+#joinWrap>div{width: 100%; height: auto; }
+#joinWrap h2{width: 100%; height: 120px; background-color: #888; text-align: center; line-height: 120px; color: #fff; margin-top: 50px;}
+#joinContainer{width: 100%; height: auto; padding: 2rem 6rem; box-sizing:  border-box;}
+#joinContainer>section{width: 100%; height: auto; background-color: #fafafa; padding: 2rem 3rem; box-sizing: border-box; border-bottom: 2px solid #333;}
+
+    .join_one{width: 100%; height: auto; }
+    .join_one>div{width: 60%; height: auto; margin: 0 auto;}
+    .join_one>div>p{width: 100%; height: auto; text-align: center; line-height:20px;  margin-bottom: 2rem; }
+    .join_one>div>ul{width: 100%; height: auto; }
+    .join_one>div>ul>li{width: 100%; height: 50px; background-color: #fff; margin-bottom: 1rem; text-align: center;line-height: 50px; }
+
+    .join_two{width: 100%; height: auto; }
+    .join_two>div{width: 60%; height: auto;margin: 0 auto; }
+    .join_two>div>ul{width: 100%; height: auto; }
+    .join_two>div>ul>li{width: 100%; height: 50px; background-color: #fff; margin-bottom: 1rem; text-align: center; line-height: 50px;}
+    
+    .join_three{width: 100%; height: auto; }
+    .join_three>div{width: 60%; height: auto;margin: 0 auto; }
+    .join_three>div>ul{width: 100%; height: auto; }
+    .join_three>div>ul>li{width: 100%; height: 50px; background-color: #fff; margin-bottom: 1rem; text-align: center; line-height: 50px;}
+
+    .join_four{width: 100%; height: auto; }
+    .join_four>div{width: 60%; height: auto; margin: 0 auto; }
+    .join_four>div>ul{width: 100%; height: auto;}
+    .join_four>div>ul>li.join_check{width: 10%; height: 20px; background-color: #fff; margin-bottom: 1rem; text-align: center; line-height: 50px; float:left; }
+    .join_four>div>ul>li.join_text{width: 90%; height: auto; background-color: #fff; margin-bottom: 1rem; float: right; font-size: 0.7rem;}
+    
+    .join_btn{ width: 100%; height: auto;  }
+    .join_btn>button{ width: 90px; height: 50px; margin: 0 auto; background-color: #888; }
+    
+
+
+
+
+
+
+
+#footBox{width: 100%; height: 120px; background-color: #555;  margin: 0 auto; padding: 1rem; box-sizing: border-box;}
+#footBox>div{width: 100%; height:100%; }
+#footBox>div>h3{width: 90px; height: auto; float: left; background-color: #fafafa; text-align: center;}
+#footBox>div>ul{width: 800px; height: 100%; float: left;
+margin-left: 50px; }
+#footBox>div>ul>li{width: auto; height: 20px; font-size: 0.7rem; text-align: center; background-color: #aaa; float: left; margin-right: 1rem; padding:0 0.7rem; margin-bottom: 0.3rem; border-right: 1px solid #333; line-height: 20px;}
+.foot_btn{float: right;}
+.foot_btn>button{ width: 120px; height: 30px; background-color: #afafaf; border-radius: 1rem;}
+/* ------------ #footBox ----------- */

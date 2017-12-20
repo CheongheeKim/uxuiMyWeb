@@ -1,9 +1,11 @@
-/* index.css */
+/* idea.css */
 
+/* #wrap */
 #wrap{width: 100%; height: auto; background-color: #fafafa;margin: 0 auto;  }
 #wrap .last{margin-right:0;}
 /* ------------ #wrap ----------- */
 
+/* #headBox */
 #headBox{width: 100%; height: 70px; background-color: #555; padding: 1rem; box-sizing: border-box; margin: 0 auto; }
   #headBox>div{width: 100%;height: 100%;}
   h1{width: 100px; height: 100%; background-color: #fff; text-align: center; float: left;}
@@ -15,20 +17,20 @@
   .gnb_btn{width: 50px; height: 100%; float: right; background-color: #fafafa; line-height: 40px; }
 /* ------------ #headBox ----------- */
 
-#bannerBox{width: 100%; height: auto; background-color: #fafafa; margin: 0 auto; }
-#bannerBox>ul{width:100%; height: 100%;  }
-#bannerBox>ul>li{width:100%; height: 400px;margin: 0 auto; background-color: #bbb; border-bottom: 1px solid #333; padding: 50px; box-sizing: border-box;} 
-#bannerBox>ul>li:nth-child(2){background-color: #ddd;}
-#bannerBox .main_banner{width: 330px; height: 100px;  margin: 0 auto; background-color: #fafafa; text-align: center; }
-/* ------------ #bannerBox ----------- */
+/* #navWrap */
+#navWrap{width: 100%; height: auto; margin: 0 auto; background-color: #fafafa;}
 
-#contentBox{width: 100%; height: auto; background-color: #aaa;  margin: 0 auto; border-bottom: 1px solid #333;}
-#contentBox>ul{width: 100%; height: 640px;}
-#contentBox>ul>li{width: 50%; height: 50%; float: left; background-color: #aaa;}
-#contentBox>ul>li:nth-child(2){background-color: #eee;}
-#contentBox>ul>li:nth-child(3){background-color: #eee;}
-#contentBox .content_box{width: 330px; height: 100px;  margin:50px auto; background-color: #fafafa; text-align: center; }
-/* ------------ #contentBox ----------- */
+#navContainer{width: 100%; height: 120px; padding: 2rem; box-sizing: border-box; background-color: #777;}
+#cnb{width: 100%; height: 100%; margin: 0 auto; background-color: #555;}
+#cnb>ul{width: 75%; height: 100%; margin: 0 auto; padding: 0.5rem; box-sizing: border-box;}
+#cnb>ul>li{width: 150px; height: 100%; float: left; text-align: center; line-height: 40px; padding-right:0.5rem; border-right: 1px solid #fafafa;  margin-right: 1rem; color: #fafafa;} 
+#cnb>ul>li:nth-child(1){font-size: 1.5rem; font-weight: bold;} 
+
+
+
+
+
+
 
 #footBox{width: 100%; height: 120px; background-color: #555;  margin: 0 auto; padding: 1rem; box-sizing: border-box;}
 #footBox>div{width: 100%; height:100%; }
@@ -38,4 +40,4 @@ margin-left: 50px; }
 #footBox>div>ul>li{width: auto; height: 20px; font-size: 0.7rem; text-align: center; background-color: #aaa; float: left; margin-right: 1rem; padding:0 0.7rem; margin-bottom: 0.3rem; border-right: 1px solid #333; line-height: 20px;}
 .foot_btn{float: right;}
 .foot_btn>button{ width: 120px; height: 30px; background-color: #afafaf; border-radius: 1rem;}
-/* ------------ #footBox ----------- */
+/* ------------ #footBox ----------- 

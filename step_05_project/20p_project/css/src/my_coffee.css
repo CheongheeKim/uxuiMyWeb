@@ -1,9 +1,11 @@
-/* index.css */
+/* my_coffee.css */
 
+/* #wrap */
 #wrap{width: 100%; height: auto; background-color: #fafafa;margin: 0 auto;  }
 #wrap .last{margin-right:0;}
 /* ------------ #wrap ----------- */
 
+/* #headBox */
 #headBox{width: 100%; height: 70px; background-color: #555; padding: 1rem; box-sizing: border-box; margin: 0 auto; }
   #headBox>div{width: 100%;height: 100%;}
   h1{width: 100px; height: 100%; background-color: #fff; text-align: center; float: left;}
@@ -12,21 +14,35 @@
   #gnb>ul{width: 100%; height: 100%; background-color: #ddd;}
   #gnb>ul>li{width: 100px; height: 100%; float: left;
    margin-right: 50px; background-color: #fafafa; text-align: center; line-height: 40px;}
-  #gnb>ul>li>a{display: block; width: 100%; height: 100%;}
+   #gnb>ul>li>a{display: block; width: 100%; height: 100%;}
   .gnb_btn{width: 50px; height: 100%; float: right; background-color: #fafafa; line-height: 40px; }
 /* ------------ #headBox ----------- */
 
+/* #navWrap */
+#navWrap{width: 100%; height: auto; margin: 0 auto; background-color: #fafafa;}
 
-#storyWrap {width: 100%; height: auto; margin: 0 auto; background-color: #fafafa;}
-.title_container{width: 100%; height: auto; margin: 0 auto; padding: 1rem; box-sizing: border-box;}
+#navContainer{width: 100%; height: 120px; padding: 2rem; box-sizing: border-box; background-color: #777;}
+#mnb{width: 100%; height: 100%; margin: 0 auto; background-color: #555;}
+#mnb>ul{width: 50%; height: 100%; margin: 0 auto; padding: 0.5rem; box-sizing: border-box;}
+#mnb>ul>li{width: 160px; height: 100%; float: left; text-align: center; line-height: 40px; padding-right:0.5rem; border-right: 1px solid #fafafa;  margin-right: 2rem; color: #fafafa;} 
+#mnb>ul>li:nth-child(3){font-size: 1.2rem; font-weight: bold;} 
+/* ------------ #mnb ----------- */
+
+/* my_coffee 페이지 본문 */
+#superRecipeWrap{width: 100%; height: auto; margin: 0 auto; background-color: #fafafa; }
+
+.title_container{width: 100%; height: auto; margin: 0 auto; padding: 1rem; box-sizing: border-box; background-color: #fafafa;}
 .title_container>h2{width: 100%; height: 80px;  border-bottom: 3px solid #333; line-height: 80px;}
-.story_container{width: 100%; height: auto; margin: 0 auto;}
-.story_container>ul{ width: 100%; height: 100%;}
-.story_container>ul>li{width: 100%; height: 500px; background-color: #aaa;}
-.story_container>ul>li:nth-child(2) {width: 100%; height: 500px; background-color: #eee;}
-.story_text_a{width: 400px; height: 120px; float: right; margin-top: 100px; margin-right: 100px;}
-.story_text_b{width: 400px; height: 120px; float: left;
- margin-top: 100px; margin-left: 100px;  }
+/* ------------ .title_container ----------- */
+#recipeContainer{width: 100%; height: 1300px; background-color: #fafafa;  padding: 2rem 4rem; box-sizing: border-box;}
+#recipeContainer>ul{width: 99%; height: 99%; margin: 0 auto;}
+.recipe_content{width: 30%; height: 30%; background-color: #fafafa; float: left; /*margin-right: ;*/ padding: 1rem;}
+.last{margin-right: 0;}
+
+.recipe_content>span{display: block; width: 100%; height: 70%; background-color: #ddd; }
+.recipe_content>p{ padding: 1rem; box-sizing: border-box; text-align: center; }
+/* ------------ #superRecipeWrap ----------- */
+
 
 
 

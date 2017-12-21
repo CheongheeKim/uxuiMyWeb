@@ -14,6 +14,7 @@
   #gnb>ul{width: 100%; height: 100%; background-color: #ddd;}
   #gnb>ul>li{width: 100px; height: 100%; float: left;
    margin-right: 50px; background-color: #fafafa; text-align: center; line-height: 40px;}
+   #gnb>ul>li>a{display: block; width: 100%; height: 100%;}
   .gnb_btn{width: 50px; height: 100%; float: right; background-color: #fafafa; line-height: 40px; }
 /* ------------ #headBox ----------- */
 
@@ -24,7 +25,7 @@
 #mnb{width: 100%; height: 100%; margin: 0 auto; background-color: #555;}
 #mnb>ul{width: 50%; height: 100%; margin: 0 auto; padding: 0.5rem; box-sizing: border-box;}
 #mnb>ul>li{width: 160px; height: 100%; float: left; text-align: center; line-height: 40px; padding-right:0.5rem; border-right: 1px solid #fafafa;  margin-right: 2rem; color: #fafafa;} 
-#mnb>ul>li:nth-child(3){font-size: 1.2rem; font-weight: bold;} 
+#mnb>ul>li:nth-child(2){font-size: 1.2rem; font-weight: bold;} 
 /* ------------ #mnb ----------- */
 
 /* super_recipe 페이지 본문 */

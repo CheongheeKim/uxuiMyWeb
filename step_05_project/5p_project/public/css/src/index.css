@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* 5p_main.css */
+
+
+/* reset.css */
+html,body{margin: 0; padding: 0; color: #333; font-size: 1rem; font-size: 16px;}
+h1,h2,h3,h4,h5,h6,p,pre,ul,ol,li,dl,dt,dd,div,
+table,thead,tbody,tfoot,tr,th,td,
+form,fieldset,legend,input,textarea,select,button,
+a,img {
+    margin: 0; padding: 0; border: 0; outline: 0; color: inherit; font-size: inherit; font-family: "apple gothic", "myriad pro", arial, nanumGothic, gothic, dotum, san-serif; text-align: center;
+}
+address,em,wbr,strong,ins, del, abbr {font-style:normal; font-weight: normal;}
+
+h1 {font-size: 32px; font-size: 2rem;}
+h2 {font-size: 29px; font-size: 1.8125rem;}
+h3 {font-size: 27px; font-size: 1.6875rem;}
+h4 {font-size: 24px; font-size: 1.5rem;}
+h5 {font-size: 22px; font-size: 1.375rem;}
+h6 {font-size: 20px; font-size: 1.25rem;}
+
+ul,ol,li {list-style: none;}
+a {text-decoration: none; color: #777;}
+a:hover, a:active {text-decoration: underline; color: #d07;}
+
+button{cursor: pointer;}
+
+/* ==================================================== */
+header,nav,article,section,footer,aside,main,figure,figcaption {
+    display: block; color: inherit;
+}
+
+
+/*  common.css */
+.clearfix:after{content:" "; display: block; width: 100%; height: 0; clear:both;}
+.clearfix::after{content:" "; display: block; width: 100%; height: 0; clear:both;}
+
+.hidden_wrap a>span, 
+.hidden{display:block; width:0; height: 0; position: absolute; z-index: -100; overflow: hidden;}
+.hidden_wrap a{display: block; width: 100%; height: 100%} 
+
+#wrap .first{ margin-left: 0; border-left: 0;}
+#wrap .last{ margin-right: 0; border-right: 0;}
+#wrap .top{ margin-top:0; border-top:0;}
+#wrap .bottom{ margin-bottom: 0; border-bottom: 0;}
+
+
+/* accessibility.css */
+a:focus, button:focus{outline: 2px solid rgb(106, 37, 235); background-color: transparent; color: #888; }
+
+
+/* design.css */
+#wrap{ width:100%; min-width:960px; height: auto; margin:0 auto;}
+#wrap .phone_number{ margin-bottom:5px; margin-right: 20px;  float:right;}
+/* //#warp */
+
+#mainPage {width: 100%; height: auto; }
+
+#headBox{width:100%; height:100px; background-color: #555; padding: 25px; box-sizing: border-box; left:0;top:0; z-index:500; width:100%; position: fixed; z-index: 500; padding: 20px; box-sizing: border-box;}
+h1{width: 300px; height: 40px; background-color: #fff; float: left; position: absolute; z-index: 600;}
+    #gnbArea {width:640px; height:40px; float:left;  left: 50%; margin-left: -200px; position: absolute; }
+    #gnbArea>ul{width: 100%; height: 100%;}
+    #gnbArea>ul>li{width: 120px; height: 40px; margin-right:50px; background-color: #aaa; float: left; line-height: 40px;  }
+    /* //#gnbArea */
+    #indicatorArea {width: 20px; height: 170px; float: right; position: fixed; right: 50%;  margin-top: 120px;  margin-right: -600px;}
+    #indicatorArea>ul {width: 100%; height: 100%;}
+    #indicatorArea>ul>li {width: 20px; height: 20px; float: left;  margin-bottom: 20px;  border:1px dotted #777; border-radius: 16px;}
+    /* //#indicatorArea */
+/* //#headBox */
+
+#imageBox {width: 100%; height:100%; background-color: #eee;}
+   #imageTextArea {width: 500px; height: 180px;}
+        #imageTextArea>div{width: 100%; height: 100%; margin-top: 150px; margin-left:400px; margin-bottom: 50px;  padding: 20px; box-sizing: border-box; float:left; background-color: #888;}
+    /* //#imageBox */
+   #contentBox {width: 100%; height: 220px; }
+   #contentBox ul{width: 100%; height: 100%; }
+   #contentBox ul>li{width:33%; height: 220px; float:left;   background-color:  #555; margin-right: 2px; padding: 20px;  box-sizing: border-box;}
+/* //#contentBox */
+  
+/* //#mainPage 메인 ----------------- */
+
+#introPage{width:100%; height:auto; background-color: #fff; position: relative;}
+
+  .banner {width: 100%; height: 100%; margin: 0 auto; } 
+  .banner>ul {width: 300%; height: 100%;} 
+  .banner>ul>li { width: 33.333333%; height: 100%; float:left; text-align: center; line-height: 620px; font-size: 2rem;} 
+  .banner>ul>li:nth-child(1){ background-color: #fcc; } 
+  .banner>ul>li:nth-child(2){ background-color: #ddd; }
+  .banner>ul>li:nth-child(3){ background-color: #888; }
+
+  .btn{ width: 90%; height: 0; position: absolute; top: 50%; left: 50%; margin-left: -580px;}
+  .btn>button{width: 50px; height: 50px;  background-color: #555;}
+  .btn>button:first-child{float:left;}
+  .btn>button:last-child{float:right;}
+      /* //.btn*/
+  #introTextArea {width: 250px; height: auto; background-color: #eee; padding: 5px; box-sizing: border-box; position: absolute;
+  z-index: 100; right: 200px; top: 0; margin-top: 150px; }
+/* //#introPage 소개 ------------------*/
+
+
+#infoPage{width: 100%; height: auto;  background-color: #eee; padding: 1rem; box-sizing: border-box;}
+    #infoTextArea{width: 100%; height: 100%; padding: 1rem; box-sizing: border-box; }
+    #infoTextArea>div{width: 400px; height: 200px; margin-top:30px; margin-bottom: 20px; margin-left: 425px; background-color: #888; padding: 1rem; box-sizing: border-box; }
+    #infoTextArea>div>p{text-align: justify;}
+    
+    #infoBox{width: 100%; height: 240px;}
+    #infoBox>ul{width: 100%; height:100%; padding-left:16px; padding-right: 16px; padding-bottom: 25px; box-sizing: border-box; }
+    #infoBox>ul>li {width:32%; height:100%; background-color:#555; margin-left: 12px; float: left; padding: 1rem; box-sizing: border-box;}
+    #infoBox .number{font-size: 2.5rem; font-weight: bold; color: #fff;}
+    #infoBox .icon{width: 90px; height: 90px; border-radius: 3rem; background-color: #eee; margin: 10px 140px; line-height: 90px;}
+    #infoBox .info_text{ font-size: 16px; color: #fff; margin-top: 8px;}
+/* //#infoPage 이용안내 ------------------*/
+
+
+#eventPage{width: 100%; height: auto;  background-color:#ddd; padding: 1rem; box-sizing: border-box; position: relative; }  
+  #eventPage>h2 {width: 100%; height: auto;  margin-top: 30px; margin-bottom: 30px; } 
+ 
+    .event_banner{width: 60%; height: 400px; margin-left: 250px;  margin-bottom: 30px; }
+    .event_banner>ul{width: 500%; height: 100%;}
+    .event_banner>ul>li{ width: 20%; height: 400px; float:left; text-align:center; line-height: 400px; font-size: 1.5rem;}  
+    .event_banner>ul>li:nth-child(1){ background-color: #aaa;} 
+    .event_banner>ul>li:nth-child(2){ background-color: #bbb;}
+    .event_banner>ul>li:nth-child(3){ background-color: #ccc;}
+    .event_banner>ul>li:nth-child(4){ background-color: #ddd;}
+    .event_banner>ul>li:nth-child(5){ background-color: #eee;}
+    /* //.event_banner */
+    .event_btn{width: 90%; height: 0; position: absolute; top: 50%; left: 50%; margin-left: -580px;}
+  .event_btn>button{width: 50px; height: 50px; background-color: #555;}
+  .event_btn>button:first-child{float:left;}
+  .event_btn>button:last-child{float:right;}
+      /* //.btn*/
+/* //#eventPage 이벤트안내 -------------- */
+
+#locationPage{width: 100%; height: auto; background-color: #ccc; padding: 1rem; box-sizing: border-box;}
+#locationPage>h2{width: 100%; height: auto; margin-top: 30px; margin-bottom: 30px;  }
+  
+  .map_container{width: 80%; height:420px; background-color: #999; padding: 1rem; box-sizing: border-box; margin: 0 auto;}
+  .map_text{width: 300px; height: 100%; float:left; margin-left: 40px;}
+  
+  .map_text>li{width:300px;height: 180px; background-color: #ddd; margin-bottom: 20px; padding: 1rem; box-sizing: border-box;}
+  
+  .google_map{width: 500px; height:380px; float: right; margin-right: 40px; background-color: #ddd; padding: 1rem; box-sizing: border-box; line-height: 380px;}
+
+/* //#locationPage 위치안내 -------------- */
+#footBox{width: 100%; height: 100px; background-color: #555; padding: 1rem; box-sizing: border-box;}
+#footBox>div{width: 20%; height: auto;float: left;}
+
+#footBox>.foot_container{width:70%; height: auto; float: left; margin-left: 20px;}
+#footBox>.foot_container>ul>li{height:auto; float: left; color: #ddd;
+margin-right: 20px; margin-bottom: 5px;border-right: 1px solid #fff; font-size: 9pt; }
+#footBox>.foot_container>ul>li.last {border-right: 0;}
+
+
+
+

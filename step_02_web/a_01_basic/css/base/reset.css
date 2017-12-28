@@ -58,6 +58,21 @@ a,img {
     margin: 0; padding: 0; border: 0; outline: 0; color: inherit; /* inherit: 부모의 속성을 똑같이 쓰겠다. */ font-size: inherit; font-family: "apple gothic", "myriad pro", arial, nanumGothic, gothic, dotum, san-serif;
 }
 
+table,tr,td,th,thead,tbody,tfoot{border-collapse: collapse; border-spacing: 0; }
+thead{background-color: #f07; color: #fafafa; text-indent: 0;}
+tbody>tr:nth-of-type(2n+1){background-color: #faa; text-indent: 0.5rem; }
+tbody>tr:nth-of-type(2n){background-color: #fafafa; text-indent: 0.5rem; }
+tfoot{background-color: #ff0; color: #333; font-weight: bold;}
+td,th{border:1px solid #777; border-left: 0; border-right: 0;}
+/*th:first-of-type,td:first-of-type{border-left: 0;} */
+/*th:last-of-type, td:last-of-type{border-right: 0;} */
+/* nth-child(1) 앞에서 부터 첫번째, 
+   nth-last-child(1) 뒤에서 부터 첫번째 */
+.tableLine{border: 1px solid #777;}
+
+/* 12/27.수 테이블 리셋 추가 */
+
+
 address,em,wbr,strong,ins, del, abbr {font-style:normal; font-weight: normal;}
 
 h1 {font-size: 32px; font-size: 2rem;}

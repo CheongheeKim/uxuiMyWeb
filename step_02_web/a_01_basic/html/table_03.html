@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko_KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--[if IE9]>
+        <script src="../js/base/html5shiv-printshiv.js"></script>
+        <script src="../js/base/html5shiv.js"></script>
+        <![endif]-->
+    
+    <!-- <link rel="stylesheet" href="../css/base/reset.css"> -->
+    <link rel="stylesheet" href="../css/base/common.css">
+    <link rel="stylesheet" href="../css/table_03.css">
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <title>siteName</title>
+
+
+</head>
+<body>
+  <div id="wrap">
+    <h1 class="hidden">table만들기 이해3</h1>
+    <div class="weather">
+      <dl>
+      <dt>일주일 예보</dt>
+      <dd>서울&#46;경기<span>서울</span></dd>
+      <dd>
+      <button type="button">날씨 영상 보기</button>
+      </dd>
+    </dl>
+    </div><!-- .weather --> 
+  <table summary="2017년 12월 마지막주 일주일 날씨 예보">
+  <caption class="hidden">2017년 12월 마지막주 일주일 날씨 예보</caption>
+    <tr><td colspan="6"><!-- 빈공간 --></td> </tr>
+    <tr class="weather_date">
+      <td>화<span class="gray_color">9.17</span></td>
+      <td>수<span class="gray_color">9.18</span></td>
+      <td>목<span class="gray_color">9.19</span></td>
+      <td>금<span class="gray_color">9.20</span></td>
+      <td>토<span class="gray_color">9.21</span></td>
+      <td class="last">일<span class="gray_color">9.22</span></td>
+    </tr>
+    <tr class="weather_img">
+      <td><img src="../img/50x50_am_01.png" alt="2017년 9월 17일 날씨 맑음"></td>
+      <td><img src="../img/50x50_am_01.png" alt="2017년 9월 18일 날씨 맑음"></td>
+      <td><img src="../img/50x50_am_03.png" alt="2017년 9월 19일 날씨 구름조금"></td>
+      <td><img src="../img/50x50_am_03.png" alt="2017년 9월 20일 날씨 구름많음"></td>
+      <td><img src="../img/50x50_am_03.png" alt="2017년 9월 21일 날씨 구름많음"></td>
+      <td class="last"><img src="../img/50x50_am_03.png" alt="2017년 9월 22일 날씨 구름많음"></td>
+      
+      
+    </tr>
+    <tr class="weather_data">
+      <td>맑음</td>
+      <td>맑음</td>
+      <td>구름조금</td>
+      <td>구름많음</td>
+      <td>구름많음</td>
+      <td>구름많음</td>
+    </tr>
+    <tr class="weather_temp">
+      <td><span>29&#8451;</span>16&#8451;</td>
+      <td><span>29&#8451;</span>18&#8451;</td>
+      <td><span>28&#8451;</span>18&#8451;</td>
+      <td><span>26&#8451;</span>19&#8451;</td>
+      <td><span>27&#8451;</span>19&#8451;</td>
+      <td class="last">
+        <span>26&#8451;</span>18&#8451;</td>
+    </tr>
+    <tr><td colspan="6"><!-- 빈공간 --></td> </tr>
+  </table>
+  </div><!-- #wrap -->
+
+<!-- 
+  
+  </thead>
+  <tbody>
+     <tr class="date">
+      <th>화<span class="gray_color">/9.17</span></th>
+      <th>수<span class="gray_color">/9.18</span></th>
+      <th>목<span class="gray_color">/9.19</span></th>
+      <th>금<span class="gray_color">/9.20</span></th>
+      <th>토<span class="gray_color">/9.21</span></th>
+      <th class="last">일<span class="gray_color">/9.22</span></th>
+   <tr>
+      <td><img src="../img/50x50_am_01.png" alt="화/9.17날씨"></td>
+      <td><img src="../img/50x50_am_01.png" alt="수/9.18날씨"></td>
+      <td><img src="../img/50x50_am_03.png" alt="목/9.19날씨"></td>
+      <td><img src="../img/50x50_am_03.png" alt="금/9.20날씨"></td>
+      <td><img src="../img/50x50_am_03.png" alt="토/9.21날씨"></td>
+      <td class="last"><img src="../img/50x50_am_03.png" alt="일/9.22날씨"></td>
+    </tr>
+    <tr class="text">
+      <td>맑음</td>
+      <td>맑음</td>
+      <td>구름조금</td>
+      <td>구름많음</td>
+      <td>구름많음</td>
+      <td class="last">구름많음</td>
+    </tr>
+    <tr class="degree">
+      <td><span class="gray_color">29˚C</span>/16˚C</span></td>
+      <td><span class="gray_color">29˚C</span>/18˚C</span></td>
+      <td><span class="gray_color">28˚C</span>/18˚C</span></td>
+      <td><span class="gray_color">26˚C</span>/19˚C</span></td>
+      <td><span class="gray_color">27˚C</span>/19˚C</span></td>
+      <td class="last"><span class="gray_color">26˚C</span>/18˚C</span></td>
+     </tr>
+  </tbody> -->
+
+
+
+<!-- jquery script -->
+<script src="../js/base/jquery-3.2.1.js"></script>
+<script src="../js/base/jquery-ui.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>table_01</title>
+  <style>
+    table{width: 600px; height: 500px; border: 1px solid #333;
+    caption-side: bottom; 
+    /*caption-side: top, bottom; 기본 두개 */
+    }
+    caption{text-align: right; color: #aaa; font-style: italic; margin-top: 0.5rem;}    
+    tr,td,th{border: 1px solid #333; text-align: center;}
+    table,tr,th,td{/*border-spacing: 0;*/ border-collapse: collapse; vertical-align: middle;}
+    /*vertical-align: top | bottom | middle | baseline; */
+    /*border-collapse: collapse; 
+    table 코드에서만 사용 가능함. 보더 라인을 완전히 붙여서 하나로 겹쳐지도록 하는 기능*/
+
+    table
+
+    ul,li{list-style: none; padding: 0.5rem; margin: 0; border: 3px solid #0af; float: left;}
+    .hidden{width: 0;height: 0; position: absolute; overflow: hidden; z-index: -1;}
+
+
+  </style>
+
+</head>
+<body>
+  <table summary="테이블 코드를 이해하고, 실제 표를 사용했을 시에 야기되는 문제점을 파악할 수 있다.">
+    <caption>테이블 코드를 이해<span class="hidden">하고, 실제 표를 사용했을 시에 야기되는 문제점을 파악할 수 있다.</span></caption>
+      <tr>
+        <td colspan="2">1-1</td>
+        <td rowspan="2">1-3</td>
+        <td rowspan="3">1-4</td>
+        <td>1-5</td>
+      </tr>
+      <tr>
+        <td>2-1</td>
+        <td rowspan="4">2-2</td>
+        <td>2-5</td>
+      </tr>
+      <tr>
+        <td rowspan="3">3-1</td>
+        <td>3-3</td>
+        <td>3-5</td>
+      </tr>
+      <tr>
+        <td>4-3</td>
+        <td colspan="2" rowspan="2">4-4</td>
+      </tr>
+      <tr>
+        <td>5-3</td>
+      </tr>
+  </table>
+  <ul>
+    <li>list_01</li>
+    <li>list_02</li>
+    <li>list_03</li>
+    <li>list_04</li>
+  </ul>
+</body>
+</html>

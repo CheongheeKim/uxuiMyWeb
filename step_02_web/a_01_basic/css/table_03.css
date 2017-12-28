@@ -1,0 +1,32 @@
+/* table_03.css */
+table,tr,td {border-collapse: collapse;}
+#wrap{width: 645px; height: auto; min-height: 100px; background-color: #fff; margin:0 auto; padding:  10px 8px; box-sizing: border-box;}
+.weather{width: 100%; height: 100%; background-color: #fff; }
+.weather>dl{width: 100%; height: 25px; margin-bottom: 6px; background-color: #fff; }
+.weather>dl>dt{line-height: 30px;font-weight: bold; float: left;font-size: 1rem; margin-right: 0.2rem; position: relative;}
+.weather>dl>dt:after{content: " "; display: block; border-right: 1px solid #777; width: 0;height: 60%; position: absolute; right: -1.245rem; top: 20%;}
+.weather>dl>dd{float: left;}
+.weather>dl>dd:first-of-type{line-height: 30px;}
+.weather>dl>dd span:before{content:">"; color: #ccc; font-weight: bold;}
+.weather>dl>dd:last-of-type{float: right; width: 104px; height: 100%;}
+.weather>dl>dd:last-of-type>button{width: 100%; height: 100%; box-sizing: border-box; border-radius: 0.5rem; border:2px solid #a7f; font-size: 0.7rem; font-weight: bold;}
+
+/* -------------------------------------- */
+table{width: 100%; height: auto;}
+tbody{border: 2px solid #9d9d9d; border-left: 0; border-right: 0; box-sizing: border-box; }
+table tbody tr{background-color: #fff !important;}
+table tr:first-of-type>td,
+table tr:last-of-type>td{height: 12px; border: 0;}
+td{border: 0; border-right: 1px solid #777; box-sizing: border-box; text-align: center;font-weight: bold; color: #555; font-size: 0.8rem;}
+td>span{color: #999;}
+td:last-child{border: 0;}
+
+
+
+.weather_date>td{height: 15px; padding-bottom: 12px;}
+.weather_date span:before{content: "/";}
+.weather_img>td{height: 52px;  }
+.weather_img>td>img{width: auto; height: 100%;}
+.weather_data>td{height: 16px;}
+.weather_temp>td{height: 18px; }
+.weather_temp span:after{content: "/";}

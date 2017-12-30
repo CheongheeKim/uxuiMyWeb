@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko_KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--[if IE9]>
+        <script src="../js/base/html5shiv-printshiv.js"></script>
+        <script src="../js/base/html5shiv.js"></script>
+        <![endif]-->
+    
+       <title>siteName</title>
+      <style>
+        #wrap{width: 626px; height: 626px; background-color: #ddd; margin: 0 auto; padding: 150px 75px; box-sizing: border-box;}
+        .hidden{width: 0; height: 0; display: block; overflow: hidden; position: absolute; z-index: -1;}
+        form{width:100%; height: 100%; background-color: #fff; }
+        fieldset {height:auto ;border-style: none; text-align: center;background-color: #fff; font-weight: normal;}
+        h2{ font-size: 1.5rem; font-family: 'appleGothic';  }
+        #idName{width: 345px; height:60px ; background-color: #58626e;  font-size: 12pt; font-family: 'appleGotic'; color:#fff; }
+        #fwName{width: 345px; height:60px ; background-color: #58626e;  font-size: 12pt; font-family: 'appleGotic'; color:#fff; }
+        #loginBtn{width: 100%; height: 70px; background-color: #f46665; margin-top: 40px;}
+       
+
+      </style>
+
+</head>
+<body>
+  <div id="wrap">
+  <form action="#" method="post">
+    <fieldset>
+      <legend class="hidden">CUSTOMER LOGIN</legend>
+      <h2>CUSTOMER LOGIN</h2>
+      <input type="text" id="idName" name="idName" value="" placeholder="Username">
+      <label for="idName" class="hidden">아이디 입력</label>
+
+      <input type="text" id="fwName" name="fwName" value="" placeholder="password">
+      <label for="fwName" class="hidden" >비밀번호 입력</label>
+    </fieldset>
+    <div id="loginBtn"> 
+      <button type="button">LOGIN</button>
+    </div>
+    </form>
+  </div>
+
+
+
+</body>
+</html>

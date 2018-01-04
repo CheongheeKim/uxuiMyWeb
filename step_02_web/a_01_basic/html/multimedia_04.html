@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- multimedia_04.html -->
+<html lang="ko_KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--[if IE9]>
+        <script src="../js/base/html5shiv-printshiv.js"></script>
+        <script src="../js/base/html5shiv.js"></script>
+        <![endif]-->
+    
+     <!-- fontAwesome and NanumGothicFont -->
+    <link rel="stylesheet" href="../css/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/font/transfonterNanum/stylesheet.css">
+
+    <!-- css Reset and globalClass -->
+    <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="../css/base/common.css">
+    <!-- use css -->
+    <link rel="stylesheet" href="../css/multimedia_04.css">
+    <!-- faviconFile -->
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <title>multimedia player_04(video)</title>
+
+</head>
+<body>
+  <div id="wrap">
+      <div class="video_player">
+          <video muted controls preload> 
+            <!-- preload : 미리 로딩하는 것 -->
+            <!-- load : js에서 소스를 불러오는 것 -->
+            <p>본 브라우저에서는 비디오가 올바르게 동작하지 않습니다.<br />
+            새로운 브라우저를 설치하시고, 감상해주세요.
+            <a href="http://google.com/chrome">크롬브라우저 설치바로가기</a></p>
+              <source src="" type="video/webm"/>
+              <source src="" type="video/ogg"/>
+              <source src="" type="video/ogv"/>
+              <source src="" type="video/mp4"/>
+          </video>
+      </div><!-- //.video_player -->
+      <div class="video_btn">
+          <button type="button" class="prev"><i class="fa fa-step-backward" aria-hidden="true"></i>prev</button>
+          <button type="button" class="play"><i class="fa fa-play" aria-hidden="true"></i>play</button>
+          <button type="button" class="pause"><i class="fa fa-pause" aria-hidden="true"></i>pause</button>
+          <button type="button" class="next"><i class="fa fa-step-forward" aria-hidden="true"></i>next</button>
+      </div>
+      <!-- i코드는 기본적으로 좋은 코드는 아님. span으로 대처하는 게 좋음, i코드는 감정을 나타내는 코드로 웹표준에서는 aria-hidden="true"으로 굳이 읽지 않는게 좋으므로 숨김처리하는 것이 좋다.-->
+      
+      <div class="contentList">
+          
+      </div> <!-- //.contentList -->
+  </div><!-- //#wrap -->
+
+
+<!-- jquery script -->
+<script src="../js/base/jquery-3.2.1.js"></script>
+<script src="../js/base/jquery-ui.js"></script>
+<script src="../js/src/multimedia_04.js"></script>
+
+
+</body>
+</html>

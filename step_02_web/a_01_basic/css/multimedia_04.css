@@ -1,0 +1,18 @@
+/* multimedia_04.css */
+#wrap{width: 960px; height: auto; margin: 0 auto; background-color: #faeafa;}
+
+.video_player{width:100%; height: auto; background-color: #333
+  ; padding: 0.5rem; box-sizing: border-box;}
+.video_player>video{float: left; width: 100%; height: auto;}
+.video_player:after{content:" "; display: block;
+ clear: both;}
+.video_btn{width: auto; height: auto; float: right;}
+.video_btn>button{padding: 0.5rem 2rem; background-color: #faa; color: #555; font-weight:  bold; transition: all 300ms ease-in;  font-size: 0.8rem; margin:0.3rem;  box-shadow: 0.1rem 0.1rem 0.1rem rgba(70,70,30,0.2)}
+.video_btn>button:hover{background-color: #aaa;}
+.video_btn>button:focus{background-color: #fd0; font-size: 1.3rem;}
+.video_btn>button:active{ font-size: 1.3rem;}
+
+button.prev{border-radius: 2rem 0 0 2rem;}
+  button.next{border-radius: 0 2rem 2rem 0;}
+.video_btn>button>i{margin-right: 0.5rem;}
+

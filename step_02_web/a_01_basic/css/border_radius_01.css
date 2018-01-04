@@ -1,0 +1,35 @@
+/* border_radius_01.css */
+#wrap{ width: 960px; height: auto; margin: 0 auto; }
+.bdr{100p height: auto;}
+.bdr:after{content: " "; display: block; clear:both;}
+.bdr>li{ width: 200px; height: 200px; margin: 1rem; float: left;
+ background-color: #faa; color: #fff;  text-align: center; line-height: 200px; transition: all 400ms ease-in-out;}
+
+ .bdr>li:hover{background-color: #0ac; font-size: 2rem;}
+
+ .bdr>li:nth-child(1){ border-top-left-radius:50%;  }
+ .bdr>li:nth-child(2){ border-top-left-radius:100%;}
+ .bdr>li:nth-child(3){ border-top-left-radius: 50%; 
+                       border-top-right-radius: 50%; }
+ .bdr>li:nth-child(4){border-bottom-left-radius: 50%; 
+                       border-bottom-right-radius: 50%; }
+ .bdr>li:nth-child(5){ border-radius: 50% 50% 50% 0;}
+ .bdr>li:nth-child(6){ border-radius: 50% 0; }
+ .bdr>li:nth-child(7){ border-radius: 0 100%;  }
+ .bdr>li:nth-child(8){border-radius: 50% ; }
+ .bdr>li:nth-child(9){ border-top-left-radius: 100%; 
+                       border-bottom-right-radius: 50%; }
+ .bdr>li:nth-child(10){ border-top-left-radius: 50% 100%; 
+                        border-bottom-right-radius: 100% 50%; }
+ .bdr>li:nth-child(11){ border-top-left-radius: 100% 40%; 
+                        border-bottom-right-radius: 100% 40%; }
+ .bdr>li:nth-child(12){ border-top-left-radius: 100%; 
+                        border-bottom-right-radius: 50% 100%;}
+ .bdr>li:nth-child(13){ border-top-left-radius: 50% 100%; 
+                       border-top-right-radius: 50% 100%; }
+ .bdr>li:nth-child(14){ border-top-left-radius: 32% 50%; 
+                        border-top-right-radius: 32% 50%; 
+                        border-bottom-left-radius: 32% 50%; 
+                        border-bottom-right-radius: 32% 50%;}
+ .bdr>li:nth-child(15){ border-top-left-radius: 70% 70%; 
+                        border-top-right-radius: 30% 70%;}

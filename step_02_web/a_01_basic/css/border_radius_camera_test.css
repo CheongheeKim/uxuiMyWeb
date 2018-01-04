@@ -1,0 +1,38 @@
+  /* border_radius_camera_test.css */
+  #wrap{width: 800px; height: 600px;  margin: 0 auto; background-color: #d7f1ff; position: relative;}
+
+#cameraBodyWrap{width: auto; height: auto; margin: 0 auto; padding-top: 152px; box-sizing: border-box;  }
+
+#camera{background-image:linear-gradient(#ff5544 50% #dd5533 50%);}
+
+
+#cameraBodyTop{width: 280px; height: 138px; background-color: #e75647; margin: 0 auto; border-top-left-radius: 20% 40%;border-top-right-radius: 20% 40%; }
+  .btn{ width: 20px;height: 20px; background-color: #adf8b6; float: left; border-radius: 50%; margin-top: 24px; margin-left: 26px; background-image:linear-gradient(#affabb 50%, #a6eeaf 50%); }
+
+  .flash{ width: 60px; height: 44px; background-color: #f2ac59; float: right; border-bottom-left-radius: 20%; border-bottom-right-radius: 20%; margin-right: 42px;margin-top: -2px; padding: 6px; box-sizing: border-box; 
+    box-shadow: 0 2px 0 #c5493c;} 
+    /* box-shadow: (x,y,번짐정도,색상); */
+  .flash_01 {width: 100%; height: 100%; border-radius: 5px; padding: 4px; box-sizing: border-box; background-color: #df9f52;}
+  .flash_02 {width: 100%; height: 100%; border-radius: 5px;  background-color: #f4f4f4}
+
+#cameraBodyBottom{width: 280px; height: 138px; background-color: #db5243; margin: 0 auto; border-bottom-left-radius: 20% 40%;border-bottom-right-radius: 20% 40%; position: relative;box-shadow: 2px 7px 10px rgba(50,50,50,0.2);}
+  .toggle{width: 42px;height: 24px;background-color:rgba(50,50,50,0.5); border-radius: 20px; position: absolute; bottom: 0; right: 0; margin-right: 30px; margin-bottom: 20px; }
+  /*.toggle_btn{width: 16px;height: 16px; background-color: #dce3e6; float: right; margin: 4px; border-radius: 50%;  background-image:linear-gradient(#dce3e6 50%, #d1d7da 50%);}*/
+.toggle_btn>fieldset{width: 100%; height: 100%; border: 0 ; box-sizing: border-box; padding: 4px;}
+#cameraCheck{position: absolute; z-index: -100; }
+label[for="cameraCheck"]{width: 16px; height: 16px; border-radius: 100%;transition: all 400ms ease;cursor: pointer; background-color: #dce3e6; float: left; box-shadow: 1px 1px 0 rgba(50,50,50,0.5); background-image:linear-gradient(#dce3e6 50% ,#d1d7da 50%);}
+#cameraCheck:checked+label{margin-left:18px; }
+
+#lensWrap{width: 100%; height: 140px; top: 50%; margin-top: -70px; position: absolute;}
+#lens{width: 140px; height: 140px; background-color: #fafafa; border-radius: 100%; margin: 0 auto; padding: 18px; box-sizing: border-box; box-shadow: 0 8px 0 #c5493c;}
+.lens_01{width: 104px; height: 104px; background-color: #e2e2e2; border-radius: 100%;margin: 0 auto; padding: 8px; box-sizing: border-box;  }
+.lens_02{width: 88px; height: 88px; background-color: #2b3339; border-radius: 100%;margin: 0 auto;padding: 8px; box-sizing: border-box; }
+.lens_03{width: 72px; height: 72px; background-color: #39434a; border-radius: 100%; margin: 0 auto; padding: 10px; box-sizing: border-box;}
+.lens_04{width: 50px; height: 50px; background-color: #332b39; border-radius: 100%;margin: 0 auto; padding: 14px; box-sizing: border-box;}
+.lens_05{width: 22px; height: 22px; background-color: #000; border-radius: 100%;margin: 0 auto; padding: 6px; box-sizing: border-box;}
+  .flare{width: 6px;height: 6px; background-color: rgba(225,225,225,0.5); border-radius: 100%; 
+    box-shadow: 10px 10px 0 4px rgba(255,255,255,0.5), 
+    -10px -10px 0 2px rgba(255,255,0,0.3), -6px -6px 0 1px rgba(2,100,200,0.5);} 
+  /* box-shadow: (x,y,번짐정도,*크기,색상), (x,y,번짐정도,*크기,색상); 
+  세미콜론 전에 콤마를 찍고 똑같이 박스섀도우를 쓰면 계속 생긴다.*/
+

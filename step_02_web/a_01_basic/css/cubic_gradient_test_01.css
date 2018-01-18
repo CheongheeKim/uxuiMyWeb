@@ -1,0 +1,16 @@
+/* cubic_gradient_test_01.css */
+#wrap{width: 229px; height: 348px; background-color: #fff ; margin: 0 auto; padding: 1rem; box-sizing:border-box; }
+.body_wrap{width: 100%; height: 317px; background-color: #fff; padding: 0.5rem;box-sizing: border-box; }
+
+.gra_wrap_01{width: 100%; height: 80px;}
+
+.gradient_01{width: 50%; height: 80px;  float: left; transform: skewY(-30deg); background-image:radial-gradient(circle at top right,#1700e7,#f6000a);  }
+
+.gradient_02{width: 50%; height: 80px; float: right; transform: skewY(30deg); background-image:radial-gradient(circle at top left,#1700e7,#f6000a);}
+.gra_wrap_02{width: 100%; height: 80px; margin-top: 50px;}
+.gradient_03{width: 50%; height: 80px;  float: left; transform: skewY(30deg); background-image:radial-gradient(circle at bottom right,#1700e7,#f6000a);  }
+
+.gradient_04{width: 50%; height: 80px; float: right; transform: skewY(-30deg); background-image:radial-gradient(circle at bottom left,#1700e7,#f6000a);}
+
+
+

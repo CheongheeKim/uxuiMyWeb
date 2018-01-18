@@ -1,0 +1,21 @@
+/*transition_test_01.css*/ 
+#wrap{width: 100%; height: 100%; margin: 0 auto; background-color: #fafafa; padding: 2rem; box-sizing:  border-box;}
+#wrap>ul{width: 100%; height: 100%;  }
+#wrap>ul>li {width: 50px; height: 50px; background-color: #999; border-radius: 12px; float: left; margin-right: 1rem; color: #fff;  text-align: center; line-height: 50px; transition: all 300ms linear;}
+
+#wrap>ul>li:nth-child(1):hover{transform: rotateZ(45deg);}
+#wrap>ul>li:nth-child(2):hover{transform:translateY(-2rem);  }
+#wrap>ul>li:nth-child(3):hover{transform:scale(0.5);  }
+#wrap>ul>li:nth-child(4):hover{transform:scale(1.5);  }
+#wrap>ul>li:nth-child(5):hover{box-shadow: 0.5rem 0.5rem 0.5rem rgba(50,50,50,0.5);  }
+#wrap>ul>li:nth-child(6):hover{ background-color: #fa9;  }
+#wrap>ul>li:nth-child(7):hover{transform:scaleY(50%); }
+#wrap>ul>li:nth-child(8):hover{transform:  }
+#wrap>ul>li:nth-child(9):hover{transform:  }
+#wrap>ul>li:nth-child(10):hover{}
+#wrap>ul>li:nth-child(11):hover{}
+#wrap>ul>li:nth-child(12):hover{}
+#wrap>ul>li:nth-child(13):hover{}
+#wrap>ul>li:nth-child(14):hover{}
+#wrap>ul>li:nth-child(15):hover{}
+

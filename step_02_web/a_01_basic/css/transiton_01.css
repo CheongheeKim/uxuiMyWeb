@@ -1,0 +1,70 @@
+/* transition_01.css */
+#wrap{width: 800px; height: auto; padding: 1rem; background-color: #ddd;}
+h1{padding: 1rem; background-color: #0af; color: #fff; margin-bottom: 1rem;}
+
+#wrap>div{width: 200px; height: 50px; background-color: #afc; margin-bottom: 1rem; }
+
+/* 
+  transition: 기본적으로 단편적인 애니메이션을 수행하기 위해 사용되는 기능 
+   -------------------------------------------------------------
+   *transition- property : transition 적용시킬 속성명을 입력하는 것 
+   (color, width,all 대체로 all로 적용)
+   -------------------------------------------------------------
+   *transition- duration : transition 을 적용시 반응하는 시간 
+   ex) 1초(=>1s | 1000ms), 0.5초(=>0.5s | 500ms) 
+   -------------------------------------------------------------
+   *transition- timing-function : transition 사용 시 해당하는 시간에 따른 움직임 처리 
+   (ease: 자연스럽게, 
+   ease-in : 점점빠르게, 
+   ease-out: 점점느리게, 
+   ease-in-out: 가속되다 느리게, 
+   linear: 지속적인(동일한 속도), 
+   cubic-bezier: 수치를 내 맘대로 조정:http://cubic-bezier.com/ 
+    -> cubic-bezier(시작베지어포인트 X, 시작베지어포인트 Y, 종료베지어 X, 종료베지어 Y) -> 최대 수치는 1 ) 
+   -------------------------------------------------------------
+   *transition-delay : 지연시간-일정시간이 지난후에 transition을 적용 0.5초(=>0.5s | 500ms) 
+
+   transition:property duration timing-fn(기본은 ease) delay;
+
+
+*/
+#wrap>.trs_01{
+    transition-property:background-color,font-size, width; 
+    transition-duration:1000ms, 500ms,2000ms;}
+    /* transition-property : 속성값으로 여러개 쓸 수 있음, 
+       transition-duration : 시간은 위의 속성값 순서대로 기입!  */
+
+#wrap>.trs_01:hover{ 
+  width: 100%; background-color: #f06; color: #fff;         
+  font-size: 2rem; transition-property:font-size,width;
+  transition-duration: 5000ms,2000ms;}
+  
+ #wrap>.trs_02{transition-property: color,width, background; 
+               transition-duration: 1000ms,1500ms,3000ms; 
+               transition-timing-function: linear,cubic-bezier(1,2,0,-2), ease-out;
+               transition-delay: 300ms,1ms,1000ms;} 
+#wrap>.trs_02:hover{color: #fff; width: 100%; background-color: #f06; }
+#wrap>.trs_03{transition: all 1000ms ease 0.5s; line-height: 1.2rem;}
+#wrap>.trs_03:hover{width: 100%; height: 500px; background-color: #0a3; font-size: 2rem; line-height: 500px; text-indent: 20rem;}
+#wrap>.trs_04:hover{ }
+
+.trs_05{width: 100%; height: 500px; box-sizing: border-box; border: 1px solid #333; background-color: #fff;}
+.trs_05>li{width: 20px; height: 50px; margin-bottom: 1rem; background-color: #0af; border-bottom: 1px solid #059; line-height: 50px;}
+.trs_05>li:nth-child(1){transition:all 2000ms linear;}
+/* 일직선 */
+.trs_05>li:nth-child(2){transition:all 2000ms ease;}
+/* 자연스럽게 */
+.trs_05>li:nth-child(3){transition:all 2000ms ease-in-out;}
+/* 점점 빨라졌다 느려지게 */
+.trs_05>li:nth-child(4){transition:all 2000ms ease-in;}
+/* 점점 빠르게 */
+.trs_05>li:nth-child(5){transition:all 2000ms ease-out;}
+/* 점점 느리게 */
+.trs_05>li:nth-child(6){transition:all 2000ms cubic-bezier(1,0.2,0,-2);}
+/* 큐빅베지어 기능 내맘대로 */
+.trs_05:hover>li{width: 100%; }
+
+
+
+
+

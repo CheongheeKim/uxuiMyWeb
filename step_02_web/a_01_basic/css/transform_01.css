@@ -1,0 +1,93 @@
+#wrap{width: 80%; min-width: 1200px; height: auto;
+background-color: #ccc; margin: 0 auto;}
+h1{padding: 0.5rem; background-color: #0af; margin-bottom: 2rem;}
+
+hr{border-bottom: 3px solid #0af; margin-bottom: 1rem;}
+#wrap>.transform_01>div{width: 200px; height: 200px; background-color: #faa;}
+.transform_01 h2{width: 100%; height: 100%; text-align: center; line-height: 200px; background-color:rgba(100,255,255,0.5); border-right: 1rem;}
+
+
+/* translate : 이동(원래의 위치는 설정된 곳에 위치하고, 임의로 위치값을 변경시켜 처리하게 하는 기능) */
+.translate>h2{transform:translateX(100px); }
+/* transform:translateX(가로축 꼭지점에서 돌고),Y(세로),Z() 로 표기 */
+.translate>h2:hover{transform: translate(0);}
+
+/* rotate : 회전기능 - 각도는 수치 deg 단위를 사용하는데, 1바퀴,2바퀴 식의 360으로 나누어지는 수치는 turn의 수치를 사용, 간혹 360도로 나누어지는 값은 작용하지 않을 수도 있다.
+   rotate는 기본이 Z축 회전!!! 
+   perspective :  원근법(투시)을 적용시키기 위해 생성된 기능으로, 자식요소에 transform 기능을 사용하고, 부모에 perspective속성을 사용하면 원근법이 적용, 이때 수치를 낮게 설정하면 가까운 거리를 생성하기 때문에 왜곡이 심해짐. */
+
+.rotate{perspective: 900px;} /* perspective 투시 원근법 */
+.rotate>h2{transform: rotateY(1turn);  /*transform: rotateZ(1turn 한바퀴); */         transition: all 1600ms; transform-origin:right bottom; } 
+/* transform-origin : 회전의 위치를 잡아줌 */
+.rotate:hover>h2{transform: rotate(0);}
+
+/* skew : illustrator의 share와 동일한 기능, 뒤틀기라는 의미를 가지고 있다. 
+          해당하는 이미지를 왜곡시켜 한쪽으로 기울어지게 만드는 기능 
+          수치단위는 각도값을 사용 */
+.skew>h2{transform: skew(45deg);transition: all 500ms;}
+.skew>h2>span{transform: skew(-45deg); display: block; transition: all 500ms;}
+.skew:hover>h2{transform: skew(0);}
+.skew:hover>h2>span{transform: skew(0);}
+
+/* scale : 크기를 변형하는 값으로, 1이라는 뜻이 100%를 의미, 0을 사용할 경우 0%라는 의미를 가지고 있다. */
+.scale>h2{transform: scale(1); transition: all 300ms; }
+.scale:hover>h2{transform: scale(1.2);}
+
+/* transform(변형), translate(속성 위치 값 변형), transition(움직임) 구분 주의!!*/
+/* -------------------------------------------------- */
+.transform_02{margin-top: 2rem; padding: 0.5rem; background-color: #aff;}
+.multi_transform{width: 450px; height: 200px; background-color: #af5;}
+
+.multi_transform>h2{width: 200px; height: 200px; text-align: center; line-height: 200px; transition: all 500ms;}
+
+.multi_transform>h2:nth-of-type(1){float: left;background-color: #8ac; }
+.multi_transform:hover>h2:nth-of-type(1){transform: translate(200px, -200px) rotate(45deg);}
+
+.multi_transform>h2:nth-of-type(2){float: right; background-color: #8ca;}
+.multi_transform:hover>h2:nth-of-type(2){transform:rotate(45deg) translate(200px, -200px);}
+/* 트랜스폼 : rotate traslate 순서 중요! 
+            rotate가 먼저 앞에 있으면 회전 후 위치 변경되는 거고, traslate가 먼저 앞에 있으면 위치값 변경 후 rotate 됨, 따라서 최종 위치 값이 둘이 다를 수 있으므로 
+            어느게 먼저 순서하느냐가 중요함! */
+
+.matrix{width: 100px;height: 100px; background-color: #555;transform: matrix(1,0,0,1,100,0);}
+/* matrix : transform의 가장 최종기. 본래의 위치나 형태를 사용할 때 전문적인 형태를 가지고 사용할 때 쓰는 기능 (translate, rotate, skew, scale 모든 기능을 가지고 있다.) 
+  가로 3개의 숫자, 세로 3개의 숫자형해로 9개의 수치를 입력하여 사용하는 표현법 
+
+  --------------------------------------------------
+trnasform:matrix(1,2,3,4,5,6);
+  --------------------------------------------------
+  | 1 3 5 |
+  | 2 4 6 |
+  | 0 0 1 |
+  --------------------------------------------------
+ transform:scale(x,y) => transform:scale(1.2 , 2);
+  | x 0 0 |
+  | 0 y 0 |
+  | 0 0 1 |
+ transform:matrix(x,0,0,y,0,0); => transform:matrix(1.2, 0, 0, 2, 0, 0);
+  --------------------------------------------------
+tranform:translateX(x); => transform: translateX(100);
+  | 1 0 x |
+  | 0 1 0 |
+  | 0 0 1 |
+ transform:matrix(1,0,0,1,x,0); => transform:matrix(1, 0, 0, 1, 100, 0);
+
+단위값 안씀
+  */
+
+
+/* http://www.useragentma.com/matrix/#  
+   불가피하게 매트릭스를 써야 할 때 참고할 사이트 */
+
+
+
+
+
+
+
+
+
+
+
+
+

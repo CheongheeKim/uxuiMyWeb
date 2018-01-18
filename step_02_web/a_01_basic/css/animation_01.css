@@ -1,0 +1,100 @@
+/* animation_01.css */
+#wrap{width: 100%; height: auto; padding: 1rem; box-sizing: border-box; background-color: #ccc;}
+h1{padding: 1rem; border-bottom: 1px solid #333; text-align: center; }
+.ani_box{width: 100%; height: auto; border: 2px solid #07a  ;}
+.ani_box>li{width: 100px; height: 100px; border-radius: 50%; background-color: #f67; color: #fff;  line-height: 100px; margin-bottom: 1rem;  text-align: center;} 
+.ani_box>li>a{color: inherit; font-weight: bold;}
+
+.ani_box:hover>li:nth-child(1){animation-name:ani_01; animation-duration: 2s; animation-iteration-count: 2;/*2번 실행하겠다.*/ animation-direction: alternate-reverse; }
+@keyframes ani_01{
+0%{background-color: #fff; transform: translateX(0) rotate(0deg);}
+50%{background-color: #f06; }
+100%{background-color: #0af;transform: translateX(500px)rotate(3turn); }
+}
+/*.ani_box>li:nth-child(2){animation: ani_01 4s infinite reverse;}*/
+.ani_box:hover>li:nth-child(3){animation:ani_02 4s 4 normal;}
+@keyframes ani_02{ 
+0% {transform:translate(0, 0) rotate(0deg);}
+25%{transform:translate(400px,0) rotate(1turn);}
+50%{transform:translate(400px,300px) rotate(2turn);}
+75%{transform:translate(0,300px) rotate(3turn);}
+100%{transform:translate(0,0) rotate(4turn);}
+}
+
+
+@keyframes ani_03{
+    0%{bottom:-20px;}
+    50%{transform: rotate(-180deg);}
+    100%{bottom:100%;}
+  }
+ .ani_box:hover>li:nth-child(4){animation-play-state: paused;} 
+
+.ani_box>li:nth-child(4){position: fixed; right: 20%; background-color: #0f4; color:#717177; /*bottom: -200px; */
+  animation: ani_03 10s infinite normal;}
+  
+
+
+
+/* animation :
+  animation이란, transition 과 유사하지만 단편적인 형태를 띄는 것이 아닌, 반복 효과를 처리할 수 있는 기능 
+  - 주의사항 -
+animation의 기능은 혼자 사용하는 것이 아닌 해당한 애니메이션의 시간에 따라 처리기능을 부여하기 위해 별도의 시간의 흐름을 제어하는 기능이 존재한다.
+(@keyframes{})  
+
+ 1. animation-name: 
+    transition의 프로포티와 비슷(변화를 주는 속성을 선택)
+    animation을 실행시 동작을 제어할 keyframe의 이름을 선택
+    (ex)
+    a{ animation-name:xido; } 
+    @keyframe xido{}
+    js에서 변수 지정하는 것과 비슷함.
+-------------------------------------------------
+ 2. animation-duration:
+    animation을 실행하는 시간 
+-------------------------------------------------
+ 3. animation-timing-function: 
+    ani를 실행하는 기능
+    (linear,
+     ease,
+     ease-in,
+     ease-out,
+     ease-in-out,
+     step-start,
+     step-end............
+    )
+-------------------------------------------------
+ 4. animation-delay:
+    지연시간
+-------------------------------------------------
+ 5. animation-iteration-count: 
+    반복횟수, infinite(무한)
+-------------------------------------------------
+ 6. animation-direction:
+    진행방향(기본 normal, reverse(반전), alternate(처음 위치에서 왔다갔다 하는것), alternate-reverse(반전 위치에서 왔다갔다 하는 것)   )    
+-------------------------------------------------
+ 7. animation-fill-mode: 
+    직역:마지막에 어디에 채워져 있을 거니?
+    애니메이션이 끝났을 때 멈춰 있는 위치를 지정하는 것
+    (none, forwards(처음부분), backwards(끝),both)
+-------------------------------------------------
+ 8. animation-play-state:
+    조건부 상태처리 (paused, running)
+-------------------------------------------------
+
+ *. animation: name duration time-fn delay count direction fill play;
+ *. animation: name duration count direction; (최소)
+  위의 기능을 전체적으로 한번에 처리하는 기능
+  @keyframes {
+    0%{} | from{}
+    10%{}
+    35%{}
+    .
+    .
+    100%{} | to {}
+  }
+ @webkit-keyframes names {
+  
+ }
+
+  */
+

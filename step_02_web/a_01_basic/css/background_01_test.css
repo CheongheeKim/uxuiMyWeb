@@ -1,0 +1,10 @@
+#wrap{width: 100%; height: auto; background-color: #ad9;}
+
+#headBox{width: 100%; height: 200px; background-color: #faa; }
+
+.attachment{width: 100%; height: auto;}
+  .attachment>div{width: 100%; height:500px; background-color: #fafafa; background-repeat: no-repeat; background-position: center 50%; background-size: 100% auto; }
+  .at_01{background-image: url("../img/amazing.jpg"); background-attachment: scroll; }  
+  .at_02{font-size: 3rem; text-align: center; font-weight: bold; line-height: 500px; background-attachment: fixed; }
+  .at_03{background-image: url("../img/ny_city.jpg");  }
+#footBox{width: 100%; height: 400px; background-color: #faa; background-attachment: scroll; }

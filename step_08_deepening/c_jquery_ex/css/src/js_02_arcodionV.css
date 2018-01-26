@@ -1,0 +1,13 @@
+/* js_02_arcodionV.css */
+#wrap{padding: 1rem; background-color: #dfdfdf;}
+h1{background-color: #fff; padding-bottom: 1rem; border-bottom: 1rem; border-bottom: 3px solid  #f06; margin-bottom: 2rem; text-align: center;}
+.accordion{width: 600px; height: auto; margin: 0 auto;}
+.accordion>dl{width: 100%; height: auto;}
+.accordion>dl>dt{width: 100%; height: 100px; border-bottom: 1px solid #fff; line-height: 100px; background-image: linear-gradient(#07a,#0ac);transition: all 500ms ease;}
+
+.accordion button{width: 100%; height: 100%; font-size: 1.5rem; font-weight: bold; background-image: linear-gradient(#07a,#0ac); }
+.accordion button:hover{color: #fff; text-shadow: -0.1rem -0.1rem 0.1rem #777; background-image: linear-gradient(#07a,#0ac);}
+
+.accordion dd{box-sizing: border-box; padding: 2rem; background-color: #adf; overflow: hidden; /*transition: all 500ms ease;*/ }
+
+.accordion dd.active{height: 0; padding-top: 0; padding-bottom: 0;}

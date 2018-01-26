@@ -1,0 +1,10 @@
+/* js_accordion_test.css */
+#wrap{width: 100%; height: 100%; margin: 0 auto;background-color: #ddd;}
+h1{width: 100%; height: auto; padding: 2rem; background-color: #dfe; text-align: center;}
+#wrap>dl{width: 50%; height: auto; border: 5px solid  #f07;}
+#wrap>dl>dt{width: 100%; height: 10%; background-color: #3ad; text-align: center; font-size: 2rem;}
+#wrap>dl>dt:hover{background-color: #aad; transition:all 300ms ease;}
+#wrap>dl>dt>button{width: 100%;height: 100%;padding: 0.5rem; box-sizing: border-box; border-bottom: 3px solid #fff; background-color:inherit;}
+#wrap>dl>dt>button:active,
+#wrap>dl>dt>button:focus{border: 3px solid  #fa0;}
+#wrap>dl>dd{width: 100%; height: auto; display: none;}
